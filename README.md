@@ -74,6 +74,46 @@ Check System Temperature                                             | PASS |
 ==============================================================================
 ```
 
+## 🔒️ Setting Up Kali Linux on Raspberry Pi
+
+1. **Download and Install Raspberry Pi Imager**
+   - Get the latest version from [Raspberry Pi's official website](https://www.raspberrypi.com/software/)
+   - Version 1.8.5 or later recommended
+
+2. **Create Kali Linux SD Card**
+   - Launch Raspberry Pi Imager
+   - Click "Choose OS"
+   - Select "Other specific purpose OS"
+   - Find and select "Kali Linux"
+   - Choose your SD card under "Storage"
+   - Click "Write" to create the bootable SD card
+
+3. **First Boot Setup**
+   - Insert SD card into Raspberry Pi
+   - Connect keyboard, mouse, and monitor
+   - Power on the device
+   - Default credentials:
+     - Username: `kali`
+     - Password: `kali`
+   - Change default password immediately
+
+4. **Network Configuration**
+   - Connect to your network via Ethernet or WiFi
+   - Note down the IP address (`ip addr show`)
+   - Enable SSH if not enabled:
+     ```bash
+     sudo systemctl enable ssh
+     sudo systemctl start ssh
+     ```
+
+5. **Update System**
+   ```bash
+   sudo apt update
+   sudo apt upgrade -y
+   ```
+
+Now your Kali Linux Raspberry Pi is ready for testing with this framework.
+
 ## 🔒 Security Notes
 
 - Never commit `.env` files or any credentials
