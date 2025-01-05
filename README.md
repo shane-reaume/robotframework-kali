@@ -8,7 +8,7 @@
 
 1. **Clone and Setup**
    ```bash
-   git clone https://github.com/yourusername/robotframework-kali.git
+   git clone https://github.com/shane-reaume/robotframework-kali.git
    cd robotframework-kali
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -55,10 +55,24 @@
 ## 📝 Test Results
 
 Results are generated in HTML format:
-- `log.html` - Detailed test logs
-- `report.html` - Test summary
+- `log.html` - Detailed test logs with system information
+- `report.html` - Test execution summary
+- `output.xml` - Machine-readable results
 
-![Sample Report](https://robotframework.org/img/screenshots/report.png)
+Example test execution:
+```bash
+==============================================================================
+System Health                                                                 
+==============================================================================
+Check System Memory                                                   | PASS |
+Check Disk Usage                                                     | PASS |
+Check System Uptime                                                  | PASS |
+Check CPU Information                                                | PASS |
+Check Network Interfaces                                             | PASS |
+Check Running Processes                                              | PASS |
+Check System Temperature                                             | PASS |
+==============================================================================
+```
 
 ## 🔒 Security Notes
 
