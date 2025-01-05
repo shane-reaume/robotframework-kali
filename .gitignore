@@ -169,3 +169,56 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+.env
+*.pyc
+__pycache__/
+results/
+log.html
+output.xml
+report.html
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+
+# VS Code / Cursor
+.vscode/
+.history/
+*.code-workspace
+.cursor/
+.cursor-server/
+
+# Robot Framework specific
+results/
+log.html
+output.xml
+report.html
+*.html
+
+# Environment and credentials
+.env
+.env.*
+!.env.template
+*.key
+*.pem
+credentials.yaml
+secrets.yaml
+
+# Robot Framework
+results/
+log.html
+output.xml
+report.html
+*.html
+debug.log
+
+# IDE specific
+.idea/
+.vscode/
+*.sublime-*
+.cursor/
+.cursor-server/

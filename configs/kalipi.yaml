@@ -1,0 +1,2 @@
+# Configuration for Kali Linux Raspberry Pi
+--variablefile  configs/devices/kalipi.py 

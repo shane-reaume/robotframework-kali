@@ -1,0 +1,5 @@
+# Robot Framework and core dependencies
+robotframework>=6.1.1
+robotframework-sshlibrary>=3.8.0
+robotframework-pythonlibcore>=4.2.0
+python-dotenv>=1.0.0 
